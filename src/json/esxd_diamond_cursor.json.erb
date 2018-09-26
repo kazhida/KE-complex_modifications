@@ -45,6 +45,51 @@
                     "to": <%= to([["page_down"]]) %>
                 }
             ]
+        },
+        {
+            "description": "Change left_control+e/s/x/d to Arrows. left_control+a/f/r/c to Home/Emd/PgUp_PgDn",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": <%= from("s", ['left_control'], ["any"]) %>,
+                    "to": <%= to([["left_arrow"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("x", ['left_control'], ["any"]) %>,
+                    "to": <%= to([["down_arrow"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("e", ['left_control'], ["any"]) %>,
+                    "to": <%= to([["up_arrow"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("d", ['left_control'], ["any"]) %>,
+                    "to": <%= to([["right_arrow"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("a", ['left_control'], ["any"]) %>,
+                    "to": <%= to([["home"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("f", ['left_control'], ["any"]) %>,
+                    "to": <%= to([["end"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("r", ['left_control'], ["any"]) %>,
+                    "to": <%= to([["page_up"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("c", ['left_control'], ["any"]) %>,
+                    "to": <%= to([["page_down"]]) %>
+                }
+            ]
         }
     ]
 }
