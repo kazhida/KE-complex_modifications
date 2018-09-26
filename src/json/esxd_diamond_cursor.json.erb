@@ -1,0 +1,50 @@
+{
+    "title": "WordStar like Diamond Cursor",
+    "rules": [
+        {
+            "description": "Change right_control+e/s/x/d to Arrows. right_control+a/f/r/c to Home/Emd/PgUp_PgDn",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": <%= from("s", ['right_control'], ["any"]) %>,
+                    "to": <%= to([["left_arrow"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("x", ['right_control'], ["any"]) %>,
+                    "to": <%= to([["down_arrow"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("e", ['right_control'], ["any"]) %>,
+                    "to": <%= to([["up_arrow"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("d", ['right_control'], ["any"]) %>,
+                    "to": <%= to([["right_arrow"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("a", ['right_control'], ["any"]) %>,
+                    "to": <%= to([["home"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("f", ['right_control'], ["any"]) %>,
+                    "to": <%= to([["end"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("r", ['right_control'], ["any"]) %>,
+                    "to": <%= to([["page_up"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("c", ['right_control'], ["any"]) %>,
+                    "to": <%= to([["page_down"]]) %>
+                }
+            ]
+        }
+    ]
+}
