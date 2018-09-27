@@ -159,6 +159,30 @@
       ]
     },
     {
+      "description": "Change left_option+c to left_control+c",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "c",
+              "modifiers": [
+                "control"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "Change left_control+e/s/x/d to Arrows. left_control+a/f/r/c to Home/Emd/PgUp_PgDn",
       "manipulators": [
         {

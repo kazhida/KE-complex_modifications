@@ -47,6 +47,16 @@
             ]
         },
         {
+            "description": "Change left_option+c to left_control+c",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": <%= from("c", ['left_option'], []) %>,
+                    "to": <%= to([["c", ['control']]]) %>
+                }
+            ]
+        },
+        {
             "description": "Change left_control+e/s/x/d to Arrows. left_control+a/f/r/c to Home/Emd/PgUp_PgDn",
             "manipulators": [
                 {
